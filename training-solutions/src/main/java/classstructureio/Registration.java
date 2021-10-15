@@ -15,7 +15,7 @@ public class Registration {
         System.out.println("E-mail address:");
         String email = scanner.nextLine();
 
-        System.out.println("Account Details:");
+        System.out.println("Account Details: ");
         System.out.println("Username: " + userName);
         System.out.println("E-mail address: "+ email);
 
