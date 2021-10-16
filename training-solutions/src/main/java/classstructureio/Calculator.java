@@ -15,7 +15,7 @@ public class Calculator {
         System.out.println("Second integer:");
         int second = scanner.nextInt();
 
-        System.out.println("Sum of two integers: ");
+        System.out.println("Sum of two integers:");
         System.out.println(first + " + " + second + " = ");
         System.out.println(first + second);
 
