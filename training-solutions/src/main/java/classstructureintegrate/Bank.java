@@ -1,6 +1,5 @@
 package classstructureintegrate;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Bank {
