@@ -10,7 +10,7 @@ a bonyolultabb típusokat fogjátok alapszinten megismerni.
 * [x] [Literálok és lokális változók videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709851-literalok-es-lokalis-valtozok)
 * [x] Literálok és lokális változók gyakorlati feladat
 * [x] [Kifejezések és utasítások videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709849-kifejezesek-es-utasitasok)
-* [ ] Kifejezések és utasítások gyakorlati feladat
+* [x] Kifejezések és utasítások gyakorlati feladat
 * [x] [Csomagok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709796-csomagok)
 * [ ] Csomagok gyakorlati feladat
 * [x] [Java API videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709757-java-api)
@@ -55,9 +55,9 @@ a bonyolultabb típusokat fogjátok alapszinten megismerni.
 
 * [x] 2021-10-18 konzultáció részvétel/videó
 * [x] 2021-10-18 konzultáció gyakorlati feladat
-* [ ] 2021-10-19 konzultáció részvétel/videó
-* [ ] 2021-10-19 konzultáció gyakorlati feladat
-* [ ] 2021-10-21 konzultáció részvétel/videó
-* [ ] 2021-10-21 konzultáció gyakorlati feladat
+* [x] 2021-10-19 konzultáció részvétel/videó
+* [x] 2021-10-19 konzultáció gyakorlati feladat
+* [x] 2021-10-21 konzultáció részvétel/videó
+* [x] 2021-10-21 konzultáció gyakorlati feladat
 * [ ] 2021-10-22 konzultáció részvétel/videó
 * [ ] 2021-10-22 konzultáció gyakorlati feladat
