@@ -17,7 +17,7 @@ public class Investment {
     }
 
     public double close(int days) {
-        double payout = active ? (getFund() + getYield(days))*(1-(cost/100)) : 0;
+        double payout = active ? (getFund() + getYield(days)) * (1-(cost/100)) : 0;
         active = false;
         return payout;
     }
