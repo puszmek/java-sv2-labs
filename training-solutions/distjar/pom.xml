@@ -16,18 +16,3 @@
 
 </project>
 
-<build>
-    <plugins>
-        <plugin>
-            <artifactId>maven-jar-plugin</artifactId>
-            <version>3.8.3</version>
-            <configuration>
-                <archive>
-                     <manifest>
-                        <mainClass>distjar.Main</mainClass>
-                     </manifest>
-                </archive>
-            </configuration>
-        </plugin>
-    </plugins>
-</build>
