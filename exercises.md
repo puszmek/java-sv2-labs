@@ -56,3 +56,38 @@
 23. Menürendszer (Bevezetés a vezérlési szerkezetekbe) - introcontrol
 24. Összegszámítás (Bevezetés a vezérlési szerkezetekbe) - introcontrol
 25. Csónakok (Bevezetés a vezérlési szerkezetekbe) - introcontrol
+
+#### Bonyolultabb típusok
+
+1. Tömbök kezelése (Tömbök) - array
+2. Plusz index (Tömbök) - array
+3. Virágok (Parancssori paraméterek) - cmdarguments
+4. Verssor összefűzése szavakból (Parancssori paraméterek) - cmdarguments
+5. Feltételes kiírás (Parancssori paraméterek) - cmdarguments
+6. Tömbök tömbjének kiírása (Tömbök tömbje) - arrayofarrays
+7. Háromszögmátrix (Tömbök tömbje) - arrayofarrays
+8. Négyszögmátrix (Tömbök tömbje) - arrayofarrays
+9. Napi mért értékek (Tömbök tömbje) - arrayofarrays
+10. Hónapok napjainak száma (Tömbök kezelése) - arrays
+11. Szorzótábla (Tömbök kezelése) - arrays
+12. Hőmérsékleti értékek (Tömbök kezelése) - arrays
+13. Hőmérsékleti értékek és az óraátállítás (Tömbök kezelése) - arrays
+14. Lottószámok (Tömbök kezelése) - arrays
+15. A mélyhűtő tartalma (Lista) - arraylist
+16. Keresztrejtvény (Lista) - arraylist
+17. Minden második (Lista) - arraylist
+18. Kedvencek listája (Lista létrehozása) - aslist
+19. Lakatlan sziget (Lista létrehozása) - aslist
+20. Számsorozat (Lista létrehozása) - aslist
+21. Tanulócsoportok (Ciklusok fajtái) - looptypes
+22. Számok összege (Ciklusok fajtái) - looptypes
+23. Minden harmadik (Módosítás bejáráskor) - looptypesmodify
+24. Nyelviskola (Módosítás bejáráskor) - looptypesmodify
+25. Rosszul megírt utasítások (Debug) - debug
+26. Csillagok (Debug) - debug
+27. Köszönj! (Konstans értékek használata) - finalmodifier
+28. Kerület, terület, felszín és térfogat (Konstans értékek használata) - finalmodifier
+29. Bruttó ár (Konstans értékek használata) - finalmodifier
+30. A hét napjai (Konstans értékek használata) - finalmodifier
+31. A Math osztály kipróbálása (Math és Random osztály) - math
+32. Két szerencsés ember (Math és Random osztály) - math
