@@ -5,10 +5,10 @@ a típusokról, az operátorokról, valamint a szöveges típusról.
 
 ## Részletesebben az osztályokról és objektumokról
 
-* [ ] [Objektumok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709803-objektumok)
-* [ ] Objektumok gyakorlati feladat
-* [ ] [Bevezetés az attribútumok használatába videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709844-bevezetes-az-attributumok-hasznalataba)
-* [ ] Bevezetés az attribútumok használatába gyakorlati feladat
+* [x] [Objektumok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709803-objektumok)
+* [x] Objektumok gyakorlati feladat
+* [x] [Bevezetés az attribútumok használatába videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709844-bevezetes-az-attributumok-hasznalataba)
+* [x] Bevezetés az attribútumok használatába gyakorlati feladat
 * [ ] [Bevezetés a konstruktorok használatába videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709653-bevezetes-a-konstruktorok-hasznalataba)
 * [ ] Bevezetés a konstruktorok használatába gyakorlati feladat
 * [ ] [Bevezetés a metódusok használatába videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709834-bevezetes-a-metodusok-hasznalataba)
@@ -62,7 +62,7 @@ a típusokról, az operátorokról, valamint a szöveges típusról.
 * [x] 2021-10-25 konzultáció gyakorlati feladat
 * [x] 2021-10-26 konzultáció részvétel/videó
 * [x] 2021-10-26 konzultáció gyakorlati feladat
-* [ ] 2021-10-28 konzultáció részvétel/videó
+* [x] 2021-10-28 konzultáció részvétel/videó
 * [ ] 2021-10-28 konzultáció gyakorlati feladat
 * [ ] 2021-10-29 konzultáció részvétel/videó
 * [ ] 2021-10-29 konzultáció gyakorlati feladat
