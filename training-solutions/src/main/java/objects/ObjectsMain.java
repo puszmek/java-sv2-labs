@@ -1,5 +1,9 @@
 package objects;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class ObjectsMain {
 
     public static void main(String[] args) {
@@ -34,5 +38,18 @@ public class ObjectsMain {
         System.out.println(anotherBook);       // objects.Book@4c873330
 
         System.out.println(book == anotherBook);       // true
+
+        Book[] books = {new Book(), new Book(), new Book()};
+
+        System.out.println();
+
+        List<Book> books0 = Arrays.asList(new Book(), new Book(), new Book());
+        System.out.println(books0);
+
+        List<Book> books1 = new ArrayList<>();
+        books1.add(new Book());
+        books1.add(new Book());
+        books1.add(new Book());
+        System.out.println(books1);
     }
 }
