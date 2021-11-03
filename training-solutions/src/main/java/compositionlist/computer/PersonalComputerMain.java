@@ -1,4 +1,4 @@
-package computer;
+package compositionlist.computer;
 
 public class PersonalComputerMain {
 
