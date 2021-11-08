@@ -11,3 +11,9 @@
 #### A nyelv építőkövei
 
 #### Bonyolultabb típusok
+
+#### Részletesebben az osztályokról és objektumokról
+
+#### Típusok és operátorok
+
+#### Részletesen a szöveges típusról
