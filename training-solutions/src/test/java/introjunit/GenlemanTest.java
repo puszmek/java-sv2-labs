@@ -9,9 +9,22 @@ public class GenlemanTest {
 
     @Test
     public void testSayHello() {
+//        Given
         Gentleman gentleman = new Gentleman();
+//        When
         String text = gentleman.sayHello("John Doe");
+//        Then
         assertThat(text, equalTo("Hello John Doe"));
+    }
+
+    @Test
+    public void testAnonymous() {
+//        Given
+        Gentleman gentleman = new Gentleman();
+//        When
+        String text = gentleman.sayHello(null);
+//        Then
+        assertThat(text, equalTo("Hello Anonymous"));
     }
 
 /* Gyakorlati feladat - Hibás teszt
