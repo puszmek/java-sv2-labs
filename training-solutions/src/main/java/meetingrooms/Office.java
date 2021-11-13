@@ -25,7 +25,7 @@ public class Office {
     }
 
     public void printEvenNames() {
-        for (int i = 0; i < meetingRooms.size(); i += 2) {
+        for (int i = 1; i < meetingRooms.size(); i += 2) {
             System.out.println(meetingRooms.get(i).getName());
         }
     }
@@ -33,14 +33,16 @@ public class Office {
     public void printAreas() {
         for (MeetingRoom meetingRoom: meetingRooms) {
             printDetailsOfMeetingRoom(meetingRoom);
+            System.out.println();
         }
     }
 
     public void printMeetingRoomsWithName(String name) {
         for (MeetingRoom meetingRoom: meetingRooms) {
             if (meetingRoom.getName().equals(name)) {
-                System.out.printf("szélesség: %d m, hosszúság: %d m, terület: %d m2",
+                System.out.printf("Tárgyaló szélessége: %d m, hosszúsága: %d m, területe: %d m2.",
                         meetingRoom.getWidth(), meetingRoom.getLength(), meetingRoom.getArea());
+                System.out.println();
             }
         }
     }
@@ -53,8 +55,9 @@ public class Office {
     public void printMeetingRoomsContains(String part) {
         for (MeetingRoom meetingRoom: meetingRooms) {
             if (meetingRoom.getName().toLowerCase().contains(part.toLowerCase())) {
-                System.out.printf("szélesség: %d m, hosszúság: %d m, terület: %d m2",
+                System.out.printf("Tárgyaló szélessége: %d m, hosszúsága: %d m, területe: %d m2.",
                         meetingRoom.getWidth(), meetingRoom.getLength(), meetingRoom.getArea());
+                System.out.println();
             }
         }
     }
@@ -63,6 +66,7 @@ public class Office {
         for (MeetingRoom meetingRoom: meetingRooms) {
             if (meetingRoom.getArea() > area) {
                 printDetailsOfMeetingRoom(meetingRoom);
+                System.out.println();
             }
         }
     }
