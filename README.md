@@ -17,3 +17,9 @@
 #### Típusok és operátorok
 
 #### Részletesen a szöveges típusról
+
+#### Unit tesztelés JUnittal
+
+#### Vezérlési szerkezetek
+
+#### Bevezetés a kivétel- és fájlkezelésbe
