@@ -1,4 +1,4 @@
-package algorithmssum;
+package algorithmssum.sales;
 
 import org.junit.jupiter.api.Test;
 
