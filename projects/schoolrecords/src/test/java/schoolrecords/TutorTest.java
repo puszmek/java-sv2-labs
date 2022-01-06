@@ -1,11 +1,9 @@
-package records;
+package schoolrecords;
 
 
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 
 public class TutorTest {
