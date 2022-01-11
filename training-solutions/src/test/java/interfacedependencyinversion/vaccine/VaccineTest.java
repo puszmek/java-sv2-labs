@@ -44,7 +44,6 @@ public class VaccineTest {
     void testSecondVaccine() {
         vaccine = new SecondVaccine();
         vaccine.generateVaccinationList(registrated);
-
         Assertions.assertEquals(6, vaccine.getVaccinationList().size());
         Assertions.assertEquals("Kovács Dénes", vaccine.getVaccinationList().get(0).getName());
         Assertions.assertEquals("Sós Sándor", vaccine.getVaccinationList().get(1).getName());
