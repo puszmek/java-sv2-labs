@@ -8,7 +8,6 @@ class SeatHeaterStateTest {
 
     @Test
     void testNext() {
-
         assertEquals(SeatHeaterState.THREE, SeatHeaterState.OFF.next());
         assertEquals(SeatHeaterState.TWO, SeatHeaterState.THREE.next());
         assertEquals(SeatHeaterState.ONE, SeatHeaterState.TWO.next());
