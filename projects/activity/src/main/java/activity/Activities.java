@@ -20,7 +20,16 @@ public class Activities {
     }
 
     public int numberOfTrackActivities() {
-
+        return (int) activities.stream().
+                filter(activity -> activity instanceof ActivityWithTrack).
+                count();
+//        int count = 0;
+//        for (Activity actual : activities) {
+//            if (actual instanceof ActivityWithTrack) {
+//                count++;
+//            }
+//        }
+//        return count;
     }
 
     public int numberOfWithoutTrackActivities() {
