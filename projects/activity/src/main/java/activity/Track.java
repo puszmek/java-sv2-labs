@@ -60,7 +60,13 @@ public class Track {
     }
 
     public double getRectangleArea() {
-
+        double minLatitude = findMinimumCoordinate().getLatitude();
+        double maxLatitude = findMaximumCoordinate().getLatitude();
+        double minLongitude = findMinimumCoordinate().getLongitude();
+        double maxLongitude = findMaximumCoordinate().getLongitude();
+        double sizeA = maxLatitude - minLatitude;
+        double sizeB = maxLongitude - minLongitude;
+        return sizeA * sizeB;
     }
 
     public List<TrackPoint> getTrackPoints() {
