@@ -1,5 +1,9 @@
 package activity;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.*;
 
 public class Track {
@@ -67,6 +71,25 @@ public class Track {
         double sizeA = maxLatitude - minLatitude;
         double sizeB = maxLongitude - minLongitude;
         return sizeA * sizeB;
+    }
+
+    public void loadFromGpx(Path path) {
+        try (BufferedReader br = Files.newBufferedReader(path)) {
+            String line;
+            Coordinate coordinate = null;
+            while ((line = br.readLine()) != null) {
+                if (line.trim().startsWith("<trkpt")) {
+                    double latitude = Double.parseDouble(line.substring(15, 25));
+                    double longitude = Double.parseDouble(line.substring(32, 42));
+                    coordinate = new Coordinate(latitude, longitude);
+                } else if (line.trim().startsWith("<ele")) {
+                    double elevation = Double.parseDouble(line.substring(9, 14));
+                    trackPoints.add(new TrackPoint(coordinate, elevation));
+                }
+            }
+        } catch (IOException ioe) {
+            throw new IllegalStateException("File not found!", ioe);
+        }
     }
 
     public List<TrackPoint> getTrackPoints() {
