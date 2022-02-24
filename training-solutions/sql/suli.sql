@@ -1,61 +1,77 @@
--- 1. Listázd ki az összes pizzát név szerint csökkenő sorrendben! (2 pont)
+CREATE DATABASE IF NOT EXISTS suli;
+USE suli;
+
+CREATE TABLE jegy (
+	id INT NOT NULL AUTO_INCREMENT,
+	ertek INT,
+	leiras VARCHAR(10),
+	datum DATE,
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE diak (
+	id INT NOT NULL AUTO_INCREMENT,
+	nev VARCHAR(30),
+	szuldatum DATE,
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE naplo (
+	id INT NOT NULL AUTO_INCREMENT,
+	leiras VARCHAR(10),
+	PRIMARY KEY (id)
+);
+
+ALTER TABLE jegy
+ADD COLUMN diak_id INT NOT NULL;
+
+ALTER TABLE diak
+ADD COLUMN naplo_id INT NOT NULL;
+
+SELECT @@autocommit;
+
+SET @@autocommit = 1;
+
+SELECT * FROM naplo, diak
+WHERE naplo.id = diak.naplo_id;
+
+SELECT *FROM naplo
+JOIN diak ON naplo.id = diak.naplo_id;
+
+SELECT * FROM jegy
+JOIN diak ON diak.id = jegy.diak_id
+JOIN naplo ON diak.naplo_id = naplo.id
+WHERE jegy.datum BETWEEN '2022-01-05' AND '2022-01-11';
+
+CREATE VIEW IF NOT EXISTS suli.temp AS
+SELECT * FROM diak;
+
+SELECT * FROM temp;
+
+SELECT nev
+FROM temp
+WHERE id = 1;
+
+SELECT MAX(ID) FROM diak;
+
+SELECT @diak_id := MAX(ID) FROM diak;
+
+INSERT INTO diak
+VALUES ((@diak_id + 1), 'Kiss Anna', '2010-12-12', 1);
+
+SELECT nev, AVG(jegy.ertek) FROM diak
+JOIN jegy ON diak.id = jegy.diak_id
+GROUP BY nev;
+
+SELECT nev, ROUND(AVG(jegy.ertek)) FROM diak
+JOIN jegy ON diak.id = jegy.diak_id
+GROUP BY nev
+HAVING AVG(jegy.ertek) < 4
+ORDER BY nev DESC;
 
 
--- 2. Számold meg, hány futár van, akinek a neve nem ’G’ betűvel kezdődik!
+ALTER TABLE diak
+ADD COLUMN taj VARCHAR(9);
 
-
--- 3. Számold össze, hogy melyik dátumon hány darab megrendelés történt! (2 pont)
-
-
--- 4. Mely rendelések történtek délelőtt? (2 pont)
-
-
--- 5. Átlagosan mennyibe kerül egy pizza? 1 tizedes pontossággal add meg a választ! Az eredményoszlopot nevezd el ’Atlag’ néven! (3 pont)
-
-
--- 6. Listázd ki az összes megrendelés idejét, a megrendelő azonosítóját és a megrendelő nevét is! (3 pont)
-
-
--- 7. Szúrj be egy új oszlopot a vevo táblába! Az új mező típusa szöveges legyen, 9 karakter hosszú, a mező neve ’telefon’! (3 pont)
-
-
--- 8. Szúrj be egy új rekordot a módosított vevo táblába! Minden mezőbe kerüljön adat! (3 pont)
-
-
--- 9. Listázd ki az összes pizzafutárt név szerint csökkenő sorrendben! (2 pont)
-
-
--- 10. Számold meg, mennyi vásárló van, akinek a neve nem ’S’ betűvel kezdődik! (2 pont)
-
-
--- 11. Számold össze, hogy melyik dátumon mennyi darab megrendelés történt! (2 pont)
-
-
--- 12. Mely rendelések történtek délután? (2 pont)
-
-
--- 13. Átlagosan hány órakor rendelnek pizzát? 1 tizedes pontossággal add meg a választ! Az eredményoszlopot nevezd el ’Atlag’ néven! (3 pont)
-
-
--- 14. Listázd ki az összes megrendeléshez tartozó azonosítót, a megrendelés idejét és a megrendelő nevét is! (3 pont)
-
-
--- 15. Szúrj be egy új oszlopot a futar táblába! Az új mező típusa szám legyen, 4 karakter hosszú, a mező neve ’szuletesi_ev’! (3 pont)
-
-
--- 16. Szúrj be egy új rekordot a futar táblába! Minden mezőbe kerüljön adat! (3 pont)
-
-
--- 17. Listázd ki az összes vásárlót név szerint csökkenő sorrendben! (2 pont)
-
-
--- 18. Átlagosan mennyi pizzát rendelnek egy alkalommal? 1 tizedes pontossággal add meg a választ! Az eredményoszlopot nevezd el ’Atlag’ néven! (3 pont)
-
-
--- 19. Listázd ki az összes megrendeléshez tartozó azonosítót, a megrendelő azonosítóját és a megrendelő nevét is! (3 pont)
-
-
--- 20. Szúrj be egy új oszlopot a pizza táblába! Az új mező típusa szám legyen, 4 karakter hosszú, a mező neve ’atmero’! (3 pont)
-
-
--- 21. Szúrj be egy új rekordot a pizza táblába! Minden mezőbe kerüljön adat! (3 pont)
+ALTER TABLE diak
+MODIFY taj VARCHAR(9) CHECK (CHAR_LENGTH(taj) = 9);
