@@ -27,6 +27,11 @@
             <version>5.8.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client-jre7</artifactId>
+            <version>1.6.1</version>
+        </dependency>
     </dependencies>
 
 </project>
