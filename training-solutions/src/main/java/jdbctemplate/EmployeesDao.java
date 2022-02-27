@@ -38,9 +38,5 @@ public class EmployeesDao {
                 (rs, row) -> rs.getString("emp_name"), id);
     }
 
-    private long getKey(KeyHolder keyHolder) {
-        Number key = keyHolder.getKey();
-        if (key != null) return key.longValue();
-        else throw new IllegalStateException("No key has been generated");
-    }
+
 }
